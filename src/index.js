@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import "./index.css";
-// import App from "./App";
+import "./index.css";
+import App from "./App";
 import StarRating from "./StarRating";
 import TextExpander from "./TextExpander";
 import { useState } from "react";
@@ -20,7 +20,7 @@ import { useState } from "react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TextExpander>
+    {/* <TextExpander>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -54,13 +54,13 @@ root.render(
       organizations. And while it's not always easy (or cheap), the results are
       out of this world. Think about the first time humans stepped foot on the
       moon or when rovers were sent to roam around on Mars.
-    </TextExpander>
+    </TextExpander> */}
     {/* <StarRating
       maxRating={5}
       messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
     />
     <StarRating maxRating={20} color="red" className="test" defaultRating={1} />
     <Test></Test> */}
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
