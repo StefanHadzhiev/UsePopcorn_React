@@ -99,7 +99,6 @@ export default function App() {
           }
 
           setMovies(data.Search);
-          console.log(data.Search);
         } catch (err) {
           setError(err.message);
         } finally {
@@ -293,6 +292,10 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     function () {
       if (!title) return;
       document.title = `Movie | ${title}`;
+
+      return function () {
+        document.title = "usePopcorn";
+      };
     },
     [title]
   );
