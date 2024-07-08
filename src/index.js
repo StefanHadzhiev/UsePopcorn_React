@@ -5,6 +5,7 @@ import App from "./App";
 import StarRating from "./StarRating";
 import TextExpander from "./TextExpander";
 import { useState } from "react";
+import App2 from "./App-v2";
 
 // function Test() {
 //   const [movieRating, setMovieRating] = useState(0);
@@ -18,4 +19,4 @@ import { useState } from "react";
 // }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<App2 />);
